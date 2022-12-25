@@ -1,0 +1,12 @@
+
+{% for post in mariage %}
+ <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                <a class="fancybox" rel="ligthbox" href="{{ post.data.featuredImage }}">
+                    <img class="img-responsive" alt="{{ featuredImage }}" src="{{ post.data.featuredImage }}" />
+                    <div class='img-info'>
+                        <h4>{{ post.data.title }}</h4>
+						<p>{{ post.data.description }}</p> 
+                    </div>
+                </a>
+            </div> 
+{% endfor %}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bienvenue chez moi - {{site.title}}</title>
+    <title>Bienvenue chez moi - </title>
     
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -12,19 +12,25 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <header>
-    {% include "layouts/header.njk" %}
-  </header>
-<main>
-      {{ content | safe }}
-</main>
+    <header>
+    Mon site avec un CMS
+</header>
+      
+<h2>My first post</h2>
+<img src="/images/uploads/Dubai1.jpg" alt="/images/uploads/Dubai1.jpg"></img>
+<p>The first post on the Eleventy + Netlify CMS from scratch blog</p>
+<p><p>Voici un texte p</p>
+</p>
 
-      {% include "layouts/footer.njk" %}
 
+
+      <footer>
+    Copyright 2021 | Tous droits réservés
+</footer>
     
     <script>
     if (window.netlifyIdentity) {
@@ -36,7 +42,6 @@
         }
       });
     }
-  
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 	<script src="/JavaScript/script.js"></script>
