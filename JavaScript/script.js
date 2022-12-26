@@ -1,32 +1,23 @@
-/*	gallery */
-$(document).ready(function(){
-
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            $('.filter').show('1000');
-        }
-        else
-        {
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
+        // $('.portfolio-item').isotope({
+        //  	itemSelector: '.item',
+        //  	layoutMode: 'fitRows'
+        //  });
+        $('.portfolio-menu ul li').click(function(){
+            $('.portfolio-menu ul li').removeClass('active');
+            $(this).addClass('active');
             
+            var selector = $(this).attr('data-filter');
+            $('.portfolio-item').isotope({
+                filter:selector
+            });
+            return  false;
+        });
+        $(document).ready(function() {
+        var popup_btn = $('.popup-btn');
+        popup_btn.magnificPopup({
+        type : 'image',
+        gallery : {
+            enabled : true
         }
-
-	        	if ($(".filter-button").removeClass("active")) {
-			$(this).removeClass("active");
-		    }
-		    	$(this).addClass("active");
-	    	});
-});
-/*	end gallery */
-
-$(document).ready(function(){
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-});
-   
+        });
+        });

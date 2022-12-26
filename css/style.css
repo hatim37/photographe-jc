@@ -46,7 +46,12 @@ body {
 
 
 /*  start - navbar  */
-.container {
+.navbar {
+  padding: 0px;
+  
+}
+
+.container-nav {
     padding-left: 0px;
     padding-right: 0px;
     height: 64px;
@@ -90,7 +95,7 @@ body {
  }
 
 .navbar .menu-items {
-  margin-left: -400px;
+  margin-left: -800px;
   padding-top: 100px;
   background: var(--color-white);
   height: 50vh;
@@ -155,7 +160,7 @@ body {
 }
 
 .navbar-container input[type="checkbox"]:checked ~ .menu-items {
-  transform: translateX(400px);
+  transform: translateX(800px);
 }
 
 .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -202,7 +207,7 @@ body {
     position: static;
     display: flex;
     height: 64px;
-    justify-content: space-between;
+    justify-content: space-around;
     
   }
 
@@ -233,61 +238,44 @@ body {
 /* End navbar */
 
 
-/*	general	*/
 
-section {
-  padding: 50px 0;
-}
 
-/*	gallery *//*
+/*	gallery */
+/*
+body{
+	margin:0;
+	padding:0;
+}*/
 
-.gallery-title{
-  font-size: 36px;
-  color: #3F6184;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 70px;
+.portfolio-menu{
+	text-align:center;
 }
-.filter-button{
-  font-size: 18px;
-  border: 2px solid #3F6184;
-padding:5px 10px;
-  text-align: center;
-  color: #3F6184;
-  margin-bottom: 30px;
-background:transparent;
-}
-.filter-button:hover,
-.filter-button:focus,
-.filter-button.active{
-  color: #ffffff;
-  background-color:#3F6184;
-outline:none;
-}
-.gallery_product{
-  margin: 0px;
-padding:0;
-position:relative;
-}
-.gallery_product .img-info{
-position: absolute;
-  background: rgba(0,0,0,0.5);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-overflow:hidden;
-color:#fff;
-top:0;
-display:none;
-   -webkit-transition: 2s;
-  transition: 2s;
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
 }
 
-.gallery_product:hover .img-info{
-display:block;
- -webkit-transition: 2s;
-  transition: 2s;
+
+.portfolio-item .item{
+
+	float:left;
+	margin-bottom:10px;
 }
 
-/*	end gallery */
+
+
+/*   section-1   */
+
+.section-1 {
+
+  
+  padding-top: 100px;
+}

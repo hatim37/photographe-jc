@@ -1,13 +1,8 @@
 
 {% for post in grossesse %}
- <div class="gallery_product col-sm-3 col-xs-6 filter category2">
-                <a class="fancybox" rel="ligthbox" href="{{ post.data.featuredImage }}">
-                    <img class="img-responsive" alt="{{ featuredImage }}" src="{{ post.data.featuredImage }}" />
-                    <div class='img-info'>
-                        <h4>{{ post.data.title }}</h4>
-						<p>{{ post.data.description }}</p>
-                      
-                    </div>
-                </a>
-            </div>
+	<div class="item grossesse col-lg-3 col-md-4 col-6 col-sm">
+        <a href="{{ post.data.featuredImage }}" class="fancylight popup-btn" data-fancybox-group="light"> 
+        	<img class="img-fluid" src="{{ post.data.featuredImage }}" alt="{{ featuredImage }}">
+        </a>
+    </div>
 {% endfor %}

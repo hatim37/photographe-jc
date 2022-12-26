@@ -2,37 +2,31 @@
 layout: layouts/layout.njk
 permalink: /posts/
 ---
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
 
 
+<section class="section-1">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center my-2">
+                <h4>Isotope filter magical layouts with Bootstrap 4</h4>
+        </div>
+    </div>
+    <div class="portfolio-menu mt-2 mb-4">
+        <ul>
+        	<li class="btn btn-outline-dark active" data-filter="*">All</li>
+            <li class="btn btn-outline-dark" data-filter=".mariage">Mariage</li>
+            <li class="btn btn-outline-dark" data-filter=".grossesse">Grossesse</li>
+            <li class="btn btn-outline-dark text" data-filter=".selfie">selfie</li>
+        </ul>
+    </div>
+    <div class="portfolio-item row">
 
- <section class="portfolio" id="portfolio">
-	<div class="container-fluid">
-		<div class="row">
-
-			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<h1 class="gallery-title">Gallery</h1>
-			</div>
-
-			<div align="center">
-				<button class="filter-button" data-filter="all">All</button>
-				<button class="filter-button" data-filter="category1">Designing</button>
-				<button class="filter-button" data-filter="category2">Development</button>
-				<button class="filter-button" data-filter="category3">Graphics</button>
-			</div>
-			
-			<br/>
-
-
-		 {% set mariage = collections.mariage %}
+		{% set mariage = collections.mariage %}
 		{% include "mariage.njk" %}
-
 		{% set grossesse = collections.grossesse %}
 		{% include "grossesse.njk" %}
 
-            <br/>
-		</div>
 	</div>
+</div>	
 </section>
 
