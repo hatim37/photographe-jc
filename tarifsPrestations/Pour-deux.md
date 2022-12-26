@@ -1,7 +1,8 @@
 ---
-title: My first post
-description: The first post on the Eleventy + Netlify CMS from scratch blog
-featuredImage: /images/uploads/Fun.jpg
+title: Juste moi
+prix: 130 €
+description: Séance pour une personne, en extérieur ou en studio
+featuredImage: /images/uploads/dubai.jpg
 ---
 
 Voici un texte p

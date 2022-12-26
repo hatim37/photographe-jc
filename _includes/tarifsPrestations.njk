@@ -1,11 +1,12 @@
 {% for post in tarifsPrestations %}
-<div class="col">
-    <div class="card">
-      <img src="{{ post.data.featuredImage }}" class="card-img-top img-responsive" alt="{{ featuredImage }}"/>
-      <div class="card-body">
-        <p class="card-text">{{ post.data.description }}</p>
-        <h4 class="card-title">{{ post.data.title }}</h4> 
-        <h5 class="card-text">A partir de : <br>{{ post.data.prix }}</h5>  
+<div class="col-lg-6 col-md-6 col-sm- col-xs- tarifs_container ">
+    <div class="card tarifs_card">
+      <img src="{{ post.data.featuredImage }}" class="card-img-top img-responsive tarifs_image" alt="{{ featuredImage }}"/>
+      <div class="card-body ">
+        <p class="card-text tarifs_description">{{ post.data.description }}</p>
+        <h4 class="card-title tarifs_titre">{{ post.data.title }}</h4> 
+        <span class="tarifs_a-partir"style="font-style: italic;color:#577083;font-size:">A partir de :</span>
+        <h5 class="card-text tarifs_prix">{{ post.data.prix }}</h5>  
       </div>
     </div>
   </div>

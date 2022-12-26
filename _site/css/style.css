@@ -19,11 +19,13 @@ ul {
   --color-orange: #E16C2B;
   --color-grey: #3C3939;
   --color-flame: #D76127;
+  --color_titre-vignette: rgb(43,124,116);
 }
 
 body { 
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+  color: var(--color-black);
 }
 
 .background {
@@ -220,10 +222,12 @@ body {
   }
 
   .navbar {
-    box-shadow: none;
+    /*border-bottom: 1px solid var(--color-grey);*/
+    box-shadow: 0px 5px 10px -7px #aaa;
     opacity: 1;
   }
   
+ 
   .menu-items li {
     font-weight: 500;
     font-size: 1.1rem;
@@ -278,4 +282,104 @@ body{
 
   
   padding-top: 100px;
+}
+
+/* tarifs*/
+
+.container_tarifs-prestations {
+  display: flex;
+  justify-content: center;
+
+}
+
+.tarifs_container {
+ max-width: 486px;
+  max-height: 562px;
+  padding: 15px;
+}
+
+.tarifs_border {
+  border: 1px solid black;
+}
+
+.tarifs_image {
+  padding: 20px 20px 0px 20px;
+}
+
+.tarifs_card {
+
+  -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.14); 
+box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.096);
+}
+
+.tarifs_description{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 0.93rem;
+ 
+
+}
+
+.tarifs_a-partir {
+  margin-bottom: 1px;
+  font-size: 15px;
+}
+
+.tarifs_titre, .tarifs_prix {
+  font-size: 19px;
+}
+
+.tarifs_titre, .tarifs_prix, .prestations_container h2,
+ .prestations_container h3, .prestations_container h4,
+ .prestations_container a {
+  color: var(--color_titre-vignette);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.tarifs_prix{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 1.64rem;
+}
+
+/* tarifs*/
+
+.prestations_container{
+  text-align: center;
+  max-width:765px;
+}
+
+.prestations_title {
+  font-size: 38px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+.prestations_container h2 {
+font-size: 24px;
+letter-spacing:0.03em;
+}
+
+.prestations_container h3 {
+  font-size: 21px;
+  letter-spacing:0.03em;
+  margin-bottom: 20px;
+}
+
+.prestations_container p {
+  text-align: left;
+  font-size: 15px;
+}
+
+.prestations_container h4 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.prestations_container a {
+
 }

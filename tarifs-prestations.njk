@@ -2,9 +2,40 @@
 layout: layouts/layout.njk
 permalink: /tarifs-prestations/
 ---
-<div class="row row-cols-1 row-cols-md-2 row-cols-xs-1 row-cols-sm-1 g-4 section-1">
+<section class="section-1 ">
+    <div class="container prestations_container">
+        <h1 class="prestations_title">Prestations</h1>
 
-    {% set tarifsPrestations = collections.tarifsPrestations %}
-    {% include "tarifsPrestations.njk" %}
+        <h2>"NARRATRICE DE VOTRE BONHEUR,</h2>
 
-</div>
+        <h3>pour que vous ayez des souvenirs à la hauteur de votre histoire..."</h3>
+
+        <p>Chaque prestation comprend le temps de préparation de votre séance, la prise de vue, 
+            le tri et retouche de vos images. Vous pourrez alors choisir vos photos via 
+            une galerie en ligne provisoire. Une fois la sélection faite, 
+            je peaufine la retouche et vous donne l'accès à votre galerie en ligne, protégée par un mot de passe.<br>
+            Des produits de qualité sont proposés une fois que vous aurez vu vos photos : tirages, livre photo, toiles ...</p>
+        
+        <h4>Faites plaisir à vos proches</h4>
+
+        <p>Des <strong>bons cadeaux</strong> sont disponibles pour offrir à l'occasion d'un cadeau de naissance, anniversaire, noël ou simplement pour le plaisir.</p><br>
+        
+        <p>Plaquette tarifaire comprenant les différentes collections sur simple demande via la page <a href="#">contact</a></p>
+    </div>
+
+
+
+</section>
+
+<section class="section-1">
+    <div class="container">
+        <div class="row container_tarifs-prestations g-4 ">
+
+            {% set tarifsPrestations = collections.tarifsPrestations %}
+            {% include "tarifsPrestations.njk" %}
+           
+           
+
+        </div>
+    </div>
+</section>
