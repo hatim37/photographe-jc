@@ -19,7 +19,8 @@ permalink: /galerie/
             <li class="btn btn-outline-dark" data-filter=".bébé">Bébé</li>
             <li class="btn btn-outline-dark" data-filter=".famille">Famille</li>
             <li class="btn btn-outline-dark" data-filter=".bapteme">Baptême</li>
-            <li class="btn btn-outline-dark text" data-filter=".couple">Couple</li>
+            <li class="btn btn-outline-dark" data-filter=".couple">Couple</li>
+            <li class="btn btn-outline-dark text" data-filter=".portrait">Portrait</li>
         </ul>
     </div>
     <div class="portfolio-item row">
@@ -36,6 +37,9 @@ permalink: /galerie/
 		{% include "bapteme.njk" %}
         {% set couple = collections.couple %}
 		{% include "couple.njk" %}
+        {% set portrait = collections.portrait %}
+		{% include "portrait.njk" %}
+
 
 	</div>
 </div>	

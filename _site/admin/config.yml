@@ -68,7 +68,16 @@ collections:
    slug: "{{slug}}"  #this sets the URL for the post
    fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "featuredImage", widget: "image"}              
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}   
+
+ - name: "portrait"        #The name of the collection and should match our posts.json file's tag
+   label: "Portrait"       #The name of the collection on the CMS itself
+   folder: "posts/portrait"      #The folder that our blog posts will be loaded from and saved to
+   create: true             #Tells the CMS that new posts can be created
+   slug: "{{slug}}"  #this sets the URL for the post
+   fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}           
 
 
  - name: "tarifs"        #The name of the collection and should match our posts.json file's tag
@@ -80,4 +89,4 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Prix", name: "prix", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Featured Image", name: "featuredImage", widget: "image"}     
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}

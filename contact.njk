@@ -1,0 +1,38 @@
+---
+layout: layouts/layout.njk
+permalink: /contact/
+---
+
+
+<section class="section-1">
+    <div class="container">
+
+    <h3 class="text-center">Contactez-nous</h3><br />
+
+    <div class="row">
+      <div class="col-md-8">
+          <form action="/post" method="post" name="contact" netlify>
+            <input class="form-control" name="name" placeholder="Nom" /><br />
+            <input class="form-control" name="phone" placeholder="Téléphone" /><br />
+            <input class="form-control" name="email" placeholder="E-mail" /><br />
+            <textarea class="form-control" name="text" placeholder="Message" style="height:150px;"></textarea><br />
+            <input class="btn btn-primary" type="submit" value="Envoyer" /><br /><br />
+          </form>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Info:</h5>
+        <p>Téléphone: 01.47.00.47.00</p>
+        <p>e-mail: <a href="mailto:support@mysite.com">photographeJ-C@gmail.com</a></p>
+        <br /><br />
+
+        <h5>Adresse:</h5>
+        <p>Atelier photoraphe J-C, <br />
+        201, rue de la paix<br />
+        75001 Paris<br /></p>
+       
+       
+
+      </div>
+    </div>
+  </div>
+</section>
