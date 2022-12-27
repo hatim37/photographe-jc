@@ -22,11 +22,54 @@ collections:
    create: true             #Tells the CMS that new posts can be created
    slug: "{{slug}}"  #this sets the URL for the post
    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/albumPhoto.njk"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Post Body", name: "body", widget: "markdown"}
       - {label: "Featured Image", name: "featuredImage", widget: "image"}
+
+ - name: "grossesse"        #The name of the collection and should match our posts.json file's tag
+   label: "Grossesse"       #The name of the collection on the CMS itself
+   folder: "posts/grossesse"      #The folder that our blog posts will be loaded from and saved to
+   create: true             #Tells the CMS that new posts can be created
+   slug: "{{slug}}"  #this sets the URL for the post
+   fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}
+
+ - name: "bebe"        #The name of the collection and should match our posts.json file's tag
+   label: "Bébé"       #The name of the collection on the CMS itself
+   folder: "posts/bébé"      #The folder that our blog posts will be loaded from and saved to
+   create: true             #Tells the CMS that new posts can be created
+   slug: "{{slug}}"  #this sets the URL for the post
+   fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}
+
+ - name: "famille"        #The name of the collection and should match our posts.json file's tag
+   label: "Famille"       #The name of the collection on the CMS itself
+   folder: "posts/famille"      #The folder that our blog posts will be loaded from and saved to
+   create: true             #Tells the CMS that new posts can be created
+   slug: "{{slug}}"  #this sets the URL for the post
+   fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}  
+
+ - name: "bapteme"        #The name of the collection and should match our posts.json file's tag
+   label: "Baptême"       #The name of the collection on the CMS itself
+   folder: "posts/bapteme"      #The folder that our blog posts will be loaded from and saved to
+   create: true             #Tells the CMS that new posts can be created
+   slug: "{{slug}}"  #this sets the URL for the post
+   fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}  
+
+ - name: "couple"        #The name of the collection and should match our posts.json file's tag
+   label: "Couple"       #The name of the collection on the CMS itself
+   folder: "posts/couple"      #The folder that our blog posts will be loaded from and saved to
+   create: true             #Tells the CMS that new posts can be created
+   slug: "{{slug}}"  #this sets the URL for the post
+   fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}              
+
 
  - name: "tarifsPrestations"        #The name of the collection and should match our posts.json file's tag
    label: "Tarifs-Prestations"       #The name of the collection on the CMS itself
