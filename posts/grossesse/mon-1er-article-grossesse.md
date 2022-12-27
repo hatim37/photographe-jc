@@ -1,7 +1,5 @@
 ---
-title: My first post
-description: The first post on the Eleventy + Netlify CMS from scratch blog
-featuredImage: /images/uploads/dubai.jpg
+title: Mon 1er article
+featuredImage: /images/uploads/grossesse.jpg
 ---
 
-Voici un texte p

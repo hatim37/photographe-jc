@@ -1,6 +1,4 @@
 ---
-title: article mariage depuis cms
-description: voici une photo a ajouter a la galerie
-featuredImage: /images/uploads/plage.jpg
+title: Mon 1er article
+featuredImage: /images/uploads/mariage.jpg
 ---
-ici text body mais avoir comment suprimer

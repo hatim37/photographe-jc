@@ -16,9 +16,7 @@ ul {
 :root {
   --color-black: #020203;
   --color-white: #FFFFFF;
-  --color-orange: #E16C2B;
   --color-grey: #3C3939;
-  --color-flame: #D76127;
   --color_titre-vignette: rgb(43,124,116);
 }
 
@@ -85,7 +83,7 @@ body {
  }
 
 .menu-items a:hover {
-  color: var(--color-flame);
+  color: var(--color_titre-vignette);
   transition: color 0.3s ease-in-out;
  }
 

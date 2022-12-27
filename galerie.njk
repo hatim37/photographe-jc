@@ -16,7 +16,7 @@ permalink: /galerie/
         	<li class="btn btn-outline-dark active" data-filter="*">All</li>
             <li class="btn btn-outline-dark" data-filter=".mariage">Mariage</li>
             <li class="btn btn-outline-dark" data-filter=".grossesse">Grossesse</li>
-            <li class="btn btn-outline-dark" data-filter=".bebe">Bébé</li>
+            <li class="btn btn-outline-dark" data-filter=".bébé">Bébé</li>
             <li class="btn btn-outline-dark" data-filter=".famille">Famille</li>
             <li class="btn btn-outline-dark" data-filter=".bapteme">Baptême</li>
             <li class="btn btn-outline-dark text" data-filter=".couple">Couple</li>
@@ -28,14 +28,14 @@ permalink: /galerie/
 		{% include "mariage.njk" %}
 		{% set grossesse = collections.grossesse %}
 		{% include "grossesse.njk" %}
-        {% set grossesse = collections.bebe %}
+        {% set bebe = collections.bebe %}
 		{% include "bebe.njk" %}
-        {% set grossesse = collections.bapteme %}
-		{% include "bapteme.njk" %}
-        {% set grossesse = collections.couple %}
-		{% include "coulpe.njk" %}
-        {% set grossesse = collections.famille %}
+        {% set famille = collections.famille %}
 		{% include "famille.njk" %}
+        {% set bapteme = collections.bapteme %}
+		{% include "bapteme.njk" %}
+        {% set couple = collections.couple %}
+		{% include "couple.njk" %}
 
 	</div>
 </div>	
