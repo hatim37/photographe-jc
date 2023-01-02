@@ -354,7 +354,7 @@ body {
 
 .tarifs_container {
   max-width: 486px;
-  max-height: 562px;
+  height: auto;
   padding: 15px;
 }
 
@@ -435,6 +435,16 @@ letter-spacing:0.03em;
 .prestations_container h4 {
   margin-top: 20px;
   font-size: 18px;
+}
+
+/* ......../ media query tarifs-prestations/.......... */
+
+@media screen and (min-width: 768px) {
+  .tarifs_container { 
+    height: 545px;
+  }
+  
+
 }
 
 
