@@ -1,4 +1,4 @@
 ---
-title: Mon 1er article
+title: Mariage-1
 featuredImage: /images/uploads/mariage.jpg
 ---
