@@ -1,42 +1,34 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Phototgraphe J-C </title>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charles Cantin - Photographe - Créateur de souvenir">
+    <title>Phototgraphe J-C </title>
 
-  <!-- Start : Import typo google font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nova+Mono&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Start : Import typo google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nova+Mono&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- End : Import typo google font--> 
 
+    <!-- Start : Import bootsrap-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- End : Import bootsrap-->
 
-    
-  <!-- End : Import typo google font--> 
+    <!-- Start : Import CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- End : Import CSS-->
 
-  <!-- Start : Import bootsrap-->
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-  <!-- End : Import typo google font-->
+    <!-- Start : Import script connexion Netlify CMS-->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- End : Import script connexion Netlify CMS-->
 
-  <!-- Start : Import CSS-->
-  <link rel="stylesheet" href="/css/style.css">
-  <!-- End : Import CSS-->
-
-  <!-- Start : Import script connexion Netlify CMS-->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <!-- End : Import script connexion Netlify CMS-->
-
-</head>
-<body>
-  <header>
-    <!-- Start : Menu -->
+  </head>
+  <body>
+    <header>
+      <!-- Start : Menu -->
         <nav class="navbar">
             <div class="navbar-container container-nav"> 
                     <input type="checkbox" name="" id="">
@@ -58,9 +50,9 @@
         </nav>
 <!-- End : Menu -->
 
-  </header>
-<main>
-      
+    </header>
+  <main>
+        
 
 
 
@@ -86,9 +78,9 @@
 
 
 
-</main>
-  <section>
-      <footer class="footer">
+  </main>
+    <section>
+        <footer class="footer">
     <div class="footer__network">
         <a href="#"><img src="/images/uploads/footer/facebook.png"></a>
         <a href="#"><img src="/images/uploads/footer/twitter.png"></a>
@@ -101,21 +93,19 @@
     </div>
     <p class="footer__made">©Copyright 2023 | par Hatim M, Developpeur Web Junior |<a href="https://www.studi.com/fr"> Studi School</p>
 </footer>
-  </section>
-    
-    <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-	<script src="/JavaScript/script.js"></script>
-</body>
+    </section>
+
+      
+    <!-- Start : Import script bootsrap-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- End : Import bootsrap-->
+
+    <!-- Start : libs javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <!-- End : libs javascript-->
+
+  	<script src="/JavaScript/script.js"></script>
+
+  </body>
 </html>
